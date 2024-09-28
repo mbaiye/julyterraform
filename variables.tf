@@ -50,3 +50,31 @@ variable "private_data_subnet_az2_cidr" {
   description = "CIDR block for the private data subnet in availability zone 2"
   type        = string
 }
+
+# Security group variables
+
+variable "ssh_location" {
+  description = "IP addess to allow ssh access"
+  type        = string
+}
+
+# RDS variables
+variable "database_snapshot_identifier" {
+  description = "Database snapshot name"
+  type        = string
+}
+
+variable "database_instance_class" {
+  description = "Database instance class"
+  type        = string
+}
+
+variable "database_instance_identifier" {
+  description = "Database instance identifier"
+  type        = string
+}
+
+variable "multi_az" {
+  description = "Enable multi-az"
+  type        = bool
+}
